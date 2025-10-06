@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K Abhinav | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --heading-color: #00ffcc;
+      --accent-color: #ffcc00;
+      --link-color: #00aaff;
+      --hover-color: #ff6600;
+    }
+
+    body.light {
+      --bg-color: #f5f5f5;
+      --text-color: #121212;
+      --heading-color: #007777;
+      --accent-color: #cc8800;
+      --link-color: #0055aa;
+      --hover-color: #ff6600;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    header {
+      background: rgba(31, 31, 31, 0.9);
+      text-align: center;
+      padding: 40px 20px;
+      position: relative;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 36px;
+      color: var(--heading-color);
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h2 {
+      color: var(--accent-color);
+      margin-top: 40px;
+    }
+
+    ul {
+      list-style-type: square;
+    }
+
+    a {
+      color: var(--link-color);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: var(--hover-color);
+    }
+
+    section {
+      padding: 20px 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: rgba(31, 31, 31, 0.9);
+      margin-top: 30px;
+      font-size: 14px;
+      color: #aaaaaa;
+    }
+
+    .resume-btn {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: var(--heading-color);
+      color: var(--bg-color);
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .resume-btn:hover {
+      background: var(--hover-color);
+      color: #ffffff;
+    }
+
+    .toggle-btn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: var(--heading-color);
+      color: var(--bg-color);
+      border: none;
+      padding: 10px 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: var(--hover-color);
+      color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 28px;
+      }
+      section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>K Abhinav</h1>
+    <p>UI / UX Designer | Department of Computer Science</p>
+    <a href="https://docs.google.com/document/d/1wl8o0K3GRq4YO6DzVObbdqsl12OL5_cq/edit?usp=drive_link"
+       target="_blank" class="resume-btn">📄 View My Resume</a>
+    <button class="toggle-btn" onclick="toggleTheme()">🌙 Dark Mode</button>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>Hello! I am K Abhinav, a passionate UI / UX Designer with an interest in creating simple, clean, and user-friendly interfaces. Currently studying Computer Science and building my skills in design and development.</p>
+
+    <h2>Skills</h2>
+    <ul>
+      <li>UI / UX Design</li>
+      <li>Wireframing & Prototyping</li>
+      <li>HTML</li>
+      <li>Figma / Adobe XD</li>
+      <li>Responsive Web Design</li>
+      <li>Python Development</li>
+    </ul>
+
+    <h2>Projects</h2>
+    <ul>
+      <li><b>Portfolio Website</b> – Designed and developed a personal portfolio using HTML and CSS.</li>
+      <li><b>Weather App</b> – Built a Python-based weather application in VS Code that fetches real-time weather data using APIs.</li>
+    </ul>
+
+    <h2>Certifications</h2>
+    <ul>
+      <li>Cloud Development – National Skill Development Corporation (NSDC)</li>
+      <li>Big Data Analytics – Great Learning</li>
+      <li>Artificial Intelligence – NoviTech R&D Pvt Ltd</li>
+      <li>AWS for Beginners – Great Learning</li>
+    </ul>
+
+    <h2>Internships</h2>
+    <ul>
+      <li>Internet of Things – 2nd May to 1st June 2024</li>
+      <li>Artificial Intelligence – 6th May to 5th June 2024</li>
+      <li>Full Stack Development (Python) – 12th May to 4th June 2025</li>
+    </ul>
+
+    <h2>Education</h2>
+    <p><b>Bharathiyar University</b></p>
+    <p>B.Sc. Computer Science | Dr. SNS Rajalakshmi College of Arts and Science (2023–2026)</p>
+    <p><b>CGPA:</b> 7.19</p>
+
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ak2945867@gmail.com">ak2945867@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/k-abhinav-" target="_blank">linkedin.com/in/k-abhinav-</a></p>
+    <p>GitHub: <a href="https://github.com/Abhinav002K474" target="_blank">github.com/Abhinav002K474</a></p>
+    <p>LeetCode: <a href="https://leetcode.com/u/Abhinav0001/" target="_blank">leetcode.com/u/Abhinav0001/</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 K Abhinav. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const button = document.querySelector('.toggle-btn');
+      body.classList.toggle('light');
+      if (body.classList.contains('light')) {
+        button.textContent = '🌞 Light Mode';
+      } else {
+        button.textContent = '🌙 Dark Mode';
+      }
+    }
+  </script>
+</body>
+</html>
